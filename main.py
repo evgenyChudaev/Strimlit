@@ -21,4 +21,4 @@ pe_w = st.slider('pital width (cm)', min_value = 0, max_value = 10)
 
 prediction = clf.predict([[sp_l, sp_w, pe_l, pe_w]])
 
-st.write(LABELS[prediction][0])
+st.write(LABELS[prediction[0]])
